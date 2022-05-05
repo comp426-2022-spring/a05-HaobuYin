@@ -33,16 +33,34 @@
       <button id="guessnav">Guess the result</button>
     </nav>
     <div id="home">
-      
+      <h1>Hi, welcome to my coin games!</h1>
+      <p>You can choose to flip a coin single time, at given times or guess heads or tails<br> to see if a single flip matches the result. Start the game by touch the buttons above.</p>
     </div>    
     <div id="single" class="hidden">
-      
+      <p id="flipResult">blank unfilled</p>
+      <img src="./assets/img/coin.png" id="quarter" width="120" height="120">
     </div>
     <div id="multi" class="hidden">
-      
+      <h1>Flip many coins</h1>
+			<form id="coins">
+				<label for="number">
+					<strong>How many coins?</strong>
+				</label>
+				<input type="number" name="number" id="number">
+				<input type="submit" value="Flip 'em!">
+			</form>
+			<table id="graphs">
+				<td id="firstrow"></td>
+			</table>
+			<h2>Results</h2>
+				<p id="heads"></p>
+				<p id="tails"></p>
     </div>
     <div id="guess" class="hidden">
-      
+		<h1>Guess if next flip is "heads" or ""tails".</h1>
+		<button id="guessHeads">Heads!</button>
+		<button id="guessTails">tails!</button>
+		<p>Results:</p>
     </div>
 	<script src="main.js"></script>
   </body>
